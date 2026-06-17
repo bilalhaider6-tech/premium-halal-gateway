@@ -37,7 +37,7 @@
 }
 
 :root {
-  --radius: 0.75rem;
+  --radius: 0.625rem;
 
   /* Brand: White + Deep Green */
   --background: oklch(0.995 0.003 120);
@@ -108,52 +108,50 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    line-height: 1.6;
   }
   h1, h2, h3, h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
   }
+  p { line-height: 1.65; }
 }
 
-@utility gradient-hero {
-  background: var(--gradient-hero);
-}
-@utility gradient-primary {
-  background: var(--gradient-primary);
-}
-@utility gradient-subtle {
-  background: var(--gradient-subtle);
-}
-@utility shadow-elegant {
-  box-shadow: var(--shadow-elegant);
-}
-@utility shadow-card-soft {
-  box-shadow: var(--shadow-card);
-}
-@utility shadow-glow {
-  box-shadow: var(--shadow-glow);
-}
-@utility text-balance {
-  text-wrap: balance;
-}
+@utility gradient-hero { background: var(--gradient-hero); }
+@utility gradient-primary { background: var(--gradient-primary); }
+@utility gradient-subtle { background: var(--gradient-subtle); }
+@utility shadow-elegant { box-shadow: var(--shadow-elegant); }
+@utility shadow-card-soft { box-shadow: var(--shadow-card); }
+@utility shadow-glow { box-shadow: var(--shadow-glow); }
+@utility text-balance { text-wrap: balance; }
 
 @utility hover-lift {
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease, border-color 0.3s ease;
   &:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-elegant);
   }
 }
 
-@utility fade-up {
-  animation: fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+@utility card-premium {
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s ease, border-color 0.3s ease;
+  & .card-image { transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); }
+  &:hover { box-shadow: var(--shadow-elegant); border-color: color-mix(in oklab, var(--primary) 40%, var(--border)); }
+  &:hover .card-image { transform: scale(1.05); }
 }
+
+@utility fade-up { animation: fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both; }
+@utility slide-up-in { animation: slideUpIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
+@keyframes slideUpIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 @keyframes shimmer {
   0% { background-position: -1000px 0; }
   100% { background-position: 1000px 0; }
