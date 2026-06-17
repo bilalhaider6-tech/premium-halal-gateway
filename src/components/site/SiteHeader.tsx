@@ -32,18 +32,12 @@ export function SiteHeader() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 md:h-20 md:px-8">
-        <Link to="/" className="flex items-center gap-2.5 shrink-0">
-          <div className="grid h-10 w-10 place-items-center rounded-xl gradient-primary text-primary-foreground font-display font-extrabold text-lg shadow-card-soft">
-            D
-          </div>
-          <div className="flex flex-col leading-tight">
-            <span className="font-display text-base font-extrabold tracking-tight text-foreground">
-              DBS Meat Ltd
-            </span>
-            <span className="hidden text-[10px] font-medium uppercase tracking-[0.18em] text-primary sm:block">
-              Premium Halal Supply
-            </span>
-          </div>
+        <Link to="/" className="flex items-center gap-3 shrink-0">
+          <img
+            src={logoAsset.url}
+            alt="DMS Meat Supplier"
+            className="h-11 w-auto md:h-12"
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
