@@ -54,7 +54,7 @@ function AboutPage() {
       <section className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center">
           <Reveal>
-            <div className="overflow-hidden rounded-3xl border border-border shadow-elegant">
+            <div className="overflow-hidden rounded-xl border border-border shadow-elegant">
               <img src={supplyImg} alt="DBS Meat cold storage facility" loading="lazy" className="h-full w-full object-cover" />
             </div>
           </Reveal>
@@ -97,7 +97,7 @@ function AboutPage() {
       <section className="bg-secondary/40 py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <Reveal>
-            <div className="grid gap-10 rounded-3xl border border-border bg-card p-8 shadow-card-soft md:p-12 lg:grid-cols-2">
+            <div className="grid gap-10 rounded-xl border border-border bg-card p-8 shadow-card-soft md:p-12 lg:grid-cols-2">
               <div>
                 <span className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Mission</span>
                 <h3 className="mt-3 font-display text-2xl font-extrabold md:text-3xl">
@@ -132,7 +132,7 @@ function AboutPage() {
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {values.map((v, i) => (
             <Reveal key={v.title} delay={i * 80}>
-              <div className="hover-lift h-full rounded-2xl border border-border bg-card p-6 shadow-card-soft">
+              <div className="hover-lift h-full rounded-lg border border-border bg-card p-6 shadow-card-soft">
                 <div className="grid h-11 w-11 place-items-center rounded-xl gradient-primary text-primary-foreground">
                   <v.icon className="h-5 w-5" />
                 </div>
@@ -161,7 +161,7 @@ function AboutPage() {
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {team.map((m, i) => (
               <Reveal key={m.name} delay={i * 80}>
-                <div className="hover-lift h-full rounded-2xl border border-border bg-card p-7 text-center shadow-card-soft">
+                <div className="hover-lift h-full rounded-lg border border-border bg-card p-7 text-center shadow-card-soft">
                   <div className="mx-auto grid h-20 w-20 place-items-center rounded-full gradient-primary text-primary-foreground font-display text-2xl font-extrabold">
                     {m.initials}
                   </div>

@@ -38,7 +38,7 @@ function ProductsPage() {
             const reverse = i % 2 === 1;
             return (
               <Reveal key={p.slug}>
-                <article className="grid gap-8 overflow-hidden rounded-3xl border border-border bg-card shadow-card-soft md:grid-cols-2 md:gap-0">
+                <article className="grid gap-8 overflow-hidden rounded-xl border border-border bg-card shadow-card-soft md:grid-cols-2 md:gap-0">
                   <div className={`relative aspect-[4/3] overflow-hidden bg-muted md:aspect-auto ${reverse ? "md:order-2" : ""}`}>
                     <img src={p.image} alt={p.name} loading="lazy" className="h-full w-full object-cover" />
                     <span className="absolute left-5 top-5 rounded-full bg-background/95 px-3 py-1 text-xs font-semibold text-primary">

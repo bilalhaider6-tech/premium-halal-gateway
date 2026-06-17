@@ -40,7 +40,7 @@ function WhoWeHelpPage() {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {sectors.map((s, i) => (
             <Reveal key={s.title} delay={i * 70}>
-              <div className="hover-lift group flex h-full flex-col rounded-3xl border border-border bg-card p-7 shadow-card-soft">
+              <div className="hover-lift group flex h-full flex-col rounded-xl border border-border bg-card p-7 shadow-card-soft">
                 <div className="grid h-12 w-12 place-items-center rounded-xl gradient-primary text-primary-foreground">
                   <s.icon className="h-6 w-6" />
                 </div>

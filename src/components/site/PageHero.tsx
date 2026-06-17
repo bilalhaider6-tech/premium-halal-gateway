@@ -28,7 +28,7 @@ export function PageHero({ eyebrow, title, description, children }: { eyebrow?: 
 export function CTASection() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
-      <div className="relative overflow-hidden rounded-3xl gradient-primary p-8 text-primary-foreground shadow-elegant md:p-14">
+      <div className="relative overflow-hidden rounded-xl gradient-primary p-8 text-primary-foreground shadow-elegant md:p-14">
         <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-primary-foreground/10 blur-3xl" />
         <div className="absolute -bottom-24 -left-10 h-72 w-72 rounded-full bg-primary-foreground/5 blur-3xl" />
         <div className="relative grid items-center gap-8 md:grid-cols-[1.4fr_1fr]">

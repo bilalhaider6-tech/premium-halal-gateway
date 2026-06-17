@@ -62,7 +62,7 @@ function ContactPage() {
       <section className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr]">
           <div className="space-y-5">
-            <div className="rounded-3xl border border-border bg-card p-6 shadow-card-soft">
+            <div className="rounded-xl border border-border bg-card p-6 shadow-card-soft">
               <div className="flex items-center gap-3">
                 <div className="grid h-11 w-11 place-items-center rounded-xl gradient-primary text-primary-foreground">
                   <Phone className="h-5 w-5" />
@@ -74,7 +74,7 @@ function ContactPage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-border bg-card p-6 shadow-card-soft">
+            <div className="rounded-xl border border-border bg-card p-6 shadow-card-soft">
               <div className="flex items-center gap-3">
                 <div className="grid h-11 w-11 place-items-center rounded-xl gradient-primary text-primary-foreground">
                   <Mail className="h-5 w-5" />
@@ -86,7 +86,7 @@ function ContactPage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-border bg-card p-6 shadow-card-soft">
+            <div className="rounded-xl border border-border bg-card p-6 shadow-card-soft">
               <div className="flex items-start gap-3">
                 <div className="grid h-11 w-11 place-items-center rounded-xl gradient-primary text-primary-foreground">
                   <MapPin className="h-5 w-5" />
@@ -98,7 +98,7 @@ function ContactPage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-border bg-card p-6 shadow-card-soft">
+            <div className="rounded-xl border border-border bg-card p-6 shadow-card-soft">
               <div className="flex items-start gap-3">
                 <div className="grid h-11 w-11 place-items-center rounded-xl gradient-primary text-primary-foreground">
                   <Clock className="h-5 w-5" />
@@ -112,7 +112,7 @@ function ContactPage() {
           </div>
 
           <div>
-            <form onSubmit={onSubmit} className="rounded-3xl border border-border bg-card p-6 shadow-card-soft md:p-10">
+            <form onSubmit={onSubmit} className="rounded-xl border border-border bg-card p-6 shadow-card-soft md:p-10">
               <div className="flex items-center gap-3">
                 <MessageSquare className="h-5 w-5 text-primary" />
                 <h2 className="font-display text-2xl font-extrabold">Send a message</h2>
@@ -146,7 +146,7 @@ function ContactPage() {
           </div>
         </div>
 
-        <div className="mt-12 overflow-hidden rounded-3xl border border-border shadow-card-soft">
+        <div className="mt-12 overflow-hidden rounded-xl border border-border shadow-card-soft">
           <iframe
             title="DBS Meat Ltd Location"
             src="https://www.google.com/maps?q=London,UK&output=embed"

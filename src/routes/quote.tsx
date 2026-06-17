@@ -105,7 +105,7 @@ function QuotePage() {
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
           <form
             onSubmit={onSubmit}
-            className="rounded-3xl border border-border bg-card p-6 shadow-card-soft md:p-10"
+            className="rounded-xl border border-border bg-card p-6 shadow-card-soft md:p-10"
           >
             <h2 className="font-display text-2xl font-extrabold">Tell us about your business</h2>
             <p className="mt-1 text-sm text-muted-foreground">All fields marked * are required.</p>
@@ -175,7 +175,7 @@ function QuotePage() {
           </form>
 
           <aside className="space-y-5">
-            <div className="rounded-3xl border border-border bg-card p-6 shadow-card-soft">
+            <div className="rounded-xl border border-border bg-card p-6 shadow-card-soft">
               <h3 className="font-display text-lg font-bold">What happens next</h3>
               <ul className="mt-4 space-y-4 text-sm">
                 {[
@@ -193,7 +193,7 @@ function QuotePage() {
               </ul>
             </div>
 
-            <div className="rounded-3xl gradient-primary p-6 text-primary-foreground shadow-elegant">
+            <div className="rounded-xl gradient-primary p-6 text-primary-foreground shadow-elegant">
               <h3 className="font-display text-lg font-bold">Need to speak with us today?</h3>
               <p className="mt-2 text-sm text-primary-foreground/85">
                 Our wholesale team is available Mon–Fri, 8:00am – 6:00pm UK time.
