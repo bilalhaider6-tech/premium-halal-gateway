@@ -134,7 +134,7 @@ function HomePage() {
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent p-6">
                 <div className="flex items-center gap-3 text-sm">
                   <CheckCircle2 className="h-5 w-5 text-primary-glow" />
-                  <span className="font-semibold">100% Halal Certified · Fully Traceable</span>
+                  <span className="font-semibold">100% Halal Certified</span>
                 </div>
               </div>
             </div>
