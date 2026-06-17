@@ -138,8 +138,8 @@ function ContactPage() {
                 </div>
               </div>
 
-              <Button type="submit" size="lg" className="mt-8 w-full rounded-xl text-base font-semibold sm:w-auto">
-                Send Message
+              <Button type="submit" size="lg" className="mt-8 w-full rounded-lg text-base font-semibold transition-all hover:-translate-y-0.5 hover:shadow-elegant sm:w-auto">
+                Speak With Our Team
               </Button>
               {sent && <p className="mt-3 text-sm text-primary">Thanks — we'll be in touch shortly.</p>}
             </form>

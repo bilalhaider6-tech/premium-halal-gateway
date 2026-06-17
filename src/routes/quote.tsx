@@ -169,8 +169,8 @@ function QuotePage() {
               </div>
             </div>
 
-            <Button type="submit" size="lg" className="mt-8 w-full rounded-xl text-base font-semibold sm:w-auto">
-              <FileText className="h-5 w-5" /> Submit Quote Request
+            <Button type="submit" size="lg" className="mt-8 w-full rounded-lg text-base font-semibold transition-all hover:-translate-y-0.5 hover:shadow-elegant sm:w-auto">
+              <FileText className="h-5 w-5" /> Request My Wholesale Quote
             </Button>
           </form>
 
