@@ -52,12 +52,6 @@ export function HeroSlider() {
                 "linear-gradient(135deg, oklch(0.32 0.07 158 / 0.55) 0%, oklch(0.22 0.05 158 / 0.65) 100%)",
             }}
           />
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent p-5 md:p-6">
-            <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-primary-foreground/90 md:text-sm">
-              <span className="h-1.5 w-1.5 rounded-full bg-primary-glow" />
-              {s.caption}
-            </div>
-          </div>
         </div>
       ))}
 
