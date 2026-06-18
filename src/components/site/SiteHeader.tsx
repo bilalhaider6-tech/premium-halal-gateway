@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoAsset from "@/assets/dms-logo.png.asset.json";
+import logoAsset from "@/assets/dms-logo-new.png.asset.json";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -31,12 +31,12 @@ export function SiteHeader() {
           : "bg-background/60 backdrop-blur-md"
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 md:h-20 md:px-8">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 md:h-24 md:px-8">
         <Link to="/" className="flex items-center gap-3 shrink-0">
           <img
             src={logoAsset.url}
-            alt="DMS Meat Supplier"
-            className="h-11 w-auto md:h-12"
+            alt="DBS Meat Ltd"
+            className="h-14 w-auto md:h-16 lg:h-[68px]"
           />
         </Link>
 
