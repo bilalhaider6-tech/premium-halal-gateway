@@ -1,13 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { Award, ShieldCheck, Truck, Snowflake, Globe2, Handshake, ArrowRight, Star, Phone, FileText, CheckCircle2 } from "lucide-react";
-import heroImg from "@/assets/hero-meat.jpg";
 import supplyImg from "@/assets/supply-chain.jpg";
 import { products } from "@/lib/products";
 import { Counter } from "@/components/site/Counter";
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/PageHero";
 import { CertificationBadges } from "@/components/site/CertificationBadges";
+import { HeroSlider } from "@/components/site/HeroSlider";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -129,16 +129,10 @@ function HomePage() {
           </div>
 
           <div className="fade-up relative" style={{ animationDelay: "150ms" }}>
-            <div className="relative overflow-hidden rounded-xl border border-primary-foreground/15 shadow-elegant">
-              <img src={heroImg} alt="Premium halal beef cuts on slate" className="aspect-[4/5] w-full object-cover" width={1600} height={1024} />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent p-6">
-                <div className="flex items-center gap-3 text-sm">
-                  <CheckCircle2 className="h-5 w-5 text-primary-glow" />
-                  <span className="font-semibold">100% Halal Certified</span>
-                </div>
-              </div>
+            <div className="relative aspect-[4/5] w-full">
+              <HeroSlider />
             </div>
-            <div className="absolute -bottom-6 -left-6 hidden rounded-lg border border-border bg-background p-5 text-foreground shadow-elegant sm:block">
+            <div className="absolute -bottom-6 -left-6 z-20 hidden rounded-lg border border-border bg-background p-5 text-foreground shadow-elegant sm:block">
               <div className="flex items-center gap-3">
                 <div className="grid h-12 w-12 place-items-center rounded-md gradient-primary text-primary-foreground">
                   <Award className="h-6 w-6" />
